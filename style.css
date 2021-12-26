@@ -577,8 +577,11 @@ footer span a:hover {
 
 .social-links {
   width: 200px;
+  
   margin-top: 20px;
   margin-bottom: 40px;
+  -webkit-text-stroke-width: medium;
+    -webkit-transform-origin-x: left;
 
   margin-right: auto;
   margin-left: 1px;
@@ -606,6 +609,7 @@ footer span a:hover {
   }
 }
 
+
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
@@ -615,7 +619,15 @@ footer span a:hover {
   .menu-btn {
     display: block;
     z-index: 999;
+   
   }
+  @media (max-width: 946px) {
+    .social-links {
+      
+      margin-bottom: auto;
+    }
+     
+    }
   .menu-btn i.active:before {
     content: "\f00d";
   }
@@ -730,5 +742,8 @@ footer span a:hover {
     font-size: 23px;
     line-height: 38px;
   }
+}
+.text{
+  margin-top: 20px;
 }
 
